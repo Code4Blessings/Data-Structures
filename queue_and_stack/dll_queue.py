@@ -16,6 +16,10 @@ class Queue:
         self.storage.add_to_tail(value)
 
     def dequeue(self):
+        if self.size == 0:
+            return 
+        self.size -= 1
+        
         #Definition of dequeue is it should remove and return an item from the front of the queue.
         #Therefore use remove_from_head function
         return self.storage.remove_from_head()

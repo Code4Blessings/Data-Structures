@@ -4,6 +4,7 @@ from dll_queue import Queue
 from dll_stack import Stack
 
 
+
 class BinarySearchTree:
     def __init__(self, value):
         self.value = value
@@ -11,8 +12,10 @@ class BinarySearchTree:
         self.right = None
 
     # Insert the given value into the tree
+    #recursive `insert` implementation
     def insert(self, value):
-        pass
+        #self.left and/or self.right need to be valid nodes
+        #for us to call 
 
     # Return True if the tree contains the value
     # False if it does not
